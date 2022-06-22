@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SAAS">
+    <listeners>
+        <listener class-name="listeners.AllureReportListener"></listener>
+        <listener class-name="listeners.RetryListener"></listener>
+    </listeners>
+    <test name="1登录测试">
+        <classes>
+            <class name="cases.LoginCase"></class>
+        </classes>
+    </test>
+    <test name="2平台管理测试">
+        <classes>
+            <class name="cases.SystemManageCase"></class>
+        </classes>
+    </test>
+    <test name="基础-学校管理测试">
+        <classes>
+            <class name="cases.SchoolManageCase"></class>
+        </classes>
+    </test>
+
+</suite>
